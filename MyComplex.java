@@ -123,6 +123,20 @@ public class MyComplex {
     {
         MyComplex den= MyComplex.multiply(right);
     }
+    public MyComplex addNew(MyComplex right)
+    {
+        MyComplex ans = null;
+        ans.real= right.real + this.real;
+        ans.imag= right.imag + this.imag;
+        return ans;
+    }
+    public MyComplex subtractNew(MyComplex right)
+    {
+        MyComplex ans = null;
+        ans.real= right.real - this.real;
+        ans.imag= right.imag - this.imag;
+        return ans;
+    }
     
     
     
